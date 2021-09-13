@@ -11,7 +11,7 @@ namespace TheGame.Match
         private LoadedDeck loadedDeck;
         public LoadedDeck LoadedDeck
         {
-            get => loadedDeck == null ? loadedDeck = Instantiate(resources.GetItem(MatchConstants.loadedDeck) as LoadedDeck) : loadedDeck;
+            get => loadedDeck == null ? loadedDeck = Instantiate(resources.GetItem(Constants.Match.loadedDeck) as LoadedDeck) : loadedDeck;
         }
     }
 }

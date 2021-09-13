@@ -3,17 +3,19 @@ using System.Collections.Generic;
 using UnityEngine;
 using TheGame.Card;
 using TheGame.Data;
+using UnityEngine.AddressableAssets;
 
 namespace TheGame
 {
-    public class CardBuilder
+    public class CardBuilder : MonoBehaviour
     {
-        private string cardKey;
-
-        public CardBuilder(string cardKey)
+        private Application App => Application.Instance;
+        public GameObject GetCard(int id)
         {
-            this.cardKey = cardKey;
+            
+            return null;
         }
+
     }
 }
 

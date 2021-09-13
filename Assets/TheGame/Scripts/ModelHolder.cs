@@ -2,17 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ModelHolder : MonoBehaviour
+namespace TheGame
 {
-    // Start is called before the first frame update
-    void Start()
+    public class ModelHolder
     {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }
+

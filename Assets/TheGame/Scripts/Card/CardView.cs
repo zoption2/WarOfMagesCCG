@@ -9,6 +9,7 @@ namespace TheGame.Card
     public class CardView : MonoBehaviour, ICardView
     {
         [SerializeField] private Text cardName;
+        [SerializeField] private Image element;
         [SerializeField] private TextMeshProUGUI cardType;
         [SerializeField] private TextMeshProUGUI defenceValue;
         [SerializeField] private Text description;
@@ -34,6 +35,11 @@ namespace TheGame.Card
         public void SetCardType(string type)
         {
             cardType.SetText(type);
+        }
+
+        public void SetElement(Sprite elementSprite)
+        {
+            element.sprite = elementSprite;
         }
 
         public void SetDefenceValue(int value)

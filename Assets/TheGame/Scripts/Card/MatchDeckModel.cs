@@ -6,7 +6,7 @@ using TheGame.Card;
 
 namespace TheGame.Match
 {
-    public class MatchDeckModel
+    public class MatchDeckModel : AbstractModel
     {
         private MatchDeckController controller;
 
@@ -25,6 +25,11 @@ namespace TheGame.Match
                 }
                 data.Add(playerID, deck);
             }
+        }
+
+        protected override void CloseModel()
+        {
+            base.CloseModel();
         }
     }
 }

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "678935471141",
+    "project_id": "warofmages-3bcaa",
+    "storage_bucket": "warofmages-3bcaa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:678935471141:android:5048cf61da49b3cf1e4bcc",
+        "android_client_info": {
+          "package_name": "com.ZoptiON.WarOfMages"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "678935471141-uebl6a6o0h7so2722tig8gtbdad9pauh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDUqErTnvSsW78_gl9PptZItGL6Fh1VJrE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "678935471141-uebl6a6o0h7so2722tig8gtbdad9pauh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

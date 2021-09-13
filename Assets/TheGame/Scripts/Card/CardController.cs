@@ -7,8 +7,11 @@ namespace TheGame.Card
     public class CardController
     {
         private CardView view;
-        public CardController(CardView view)
+        private CardModel model;
+
+        public CardController(CardModel model, CardView view)
         {
+            this.model = model;
             this.view = view;
         }
     }
