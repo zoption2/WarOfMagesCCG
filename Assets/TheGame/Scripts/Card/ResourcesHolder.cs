@@ -17,7 +17,7 @@ namespace TheGame
         {
             for (int i = 0; i < items.Count; i++)
             {
-                if (items[i].itemName.CompareTo(itemName) == 0)
+                if (items[i].itemName.Equals(itemName))
                 {
                     return items[i].itemPrefab;
                 }

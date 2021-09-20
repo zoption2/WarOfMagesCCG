@@ -9,11 +9,14 @@ namespace TheGame
 {
     public class CardBuilder : MonoBehaviour
     {
-        private Application App => Application.Instance;
         public GameObject GetCard(int id)
         {
-            
-            return null;
+            GameObject newCard = Instantiate(Application.Instance.Resources.CardPrefab);
+            var controller = newCard.GetComponent<CardController>();
+            CardData data = Application.Instance.CardDataHolder.GetData(id);
+            CardModel model = new CardModel(controller, data);
+            model.Initialize();
+            return newCard;
         }
 
     }

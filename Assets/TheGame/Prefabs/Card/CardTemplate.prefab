@@ -1544,6 +1544,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3034521608980787791}
+  - component: {fileID: 9064898804781982563}
   m_Layer: 5
   m_Name: CardTemplate
   m_TagString: Untagged
@@ -1581,6 +1582,25 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 682, y: 1024}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &9064898804781982563
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3034521608980787790}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2858889e95dcc2741b9b0f59a6327d2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cardName: {fileID: 3034521607733056005}
+  element: {fileID: 4041472773616338404}
+  cardType: {fileID: 0}
+  defenceValue: {fileID: 3034521607373262995}
+  description: {fileID: 3034521608183710864}
+  magicCostHolder: {fileID: 2001860870618097436}
+  magicCount: {fileID: 441854079216813155}
 --- !u!1 &3034521609064309072
 GameObject:
   m_ObjectHideFlags: 0

@@ -6,13 +6,30 @@ namespace TheGame
 {
     public class Application : Singleton<Application>
     {
-        [SerializeField] private ResourcesHolder resources;
-        public ModelHolder AllModels { get; private set; }
-        public ResourcesHolder Resources => resources;
+        [SerializeField] private GameResources gameResources;
+        [SerializeField] private CardDataHolder cardDataHolder;
+
+        private ModelHolder modelHolder;
+        public ModelHolder ModelHolder
+        {
+            get
+            { 
+                if (modelHolder == null)
+                {
+                    modelHolder = new ModelHolder();
+                }
+                return modelHolder;
+            }
+        }
+
+
+        public GameResources Resources => gameResources;
+        public CardDataHolder CardDataHolder => cardDataHolder;
+
 
         public void Initialize()
         {
-            AllModels = new ModelHolder();
+            
         }
     }
 }

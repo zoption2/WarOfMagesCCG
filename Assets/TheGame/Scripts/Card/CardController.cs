@@ -4,15 +4,18 @@ using UnityEngine;
 
 namespace TheGame.Card
 {
-    public class CardController
+    public class CardController : MonoBehaviour
     {
         private CardView view;
         private CardModel model;
 
-        public CardController(CardModel model, CardView view)
+        public int UniqueID { get; private set; }
+
+        public void InitializeController(CardModel model, int uniqueID)
         {
             this.model = model;
-            this.view = view;
+            this.UniqueID = uniqueID;
+            view = GetComponent<CardView>();
         }
     }
 }

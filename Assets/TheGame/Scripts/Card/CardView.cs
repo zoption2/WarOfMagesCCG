@@ -13,7 +13,7 @@ namespace TheGame.Card
         [SerializeField] private TextMeshProUGUI cardType;
         [SerializeField] private TextMeshProUGUI defenceValue;
         [SerializeField] private Text description;
-        [SerializeField] private GameObject magicCostHolder;
+        [SerializeField] private GameObject elementsCostHolder;
         [SerializeField] private CountVisual magicCount;
 
         private CardController controller;
@@ -54,7 +54,7 @@ namespace TheGame.Card
 
         public void ActivateMagicCostHolder(bool isActive)
         {
-            magicCostHolder.SetActive(isActive);
+            elementsCostHolder.SetActive(isActive);
         }
 
         public void SetMagicCostValue(int value)
