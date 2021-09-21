@@ -28,12 +28,15 @@ namespace TheGame.Card
         {
             ID = GenerateID();
             Application.Instance.ModelHolder.CardsModels.Add(ID, this);
+            controller.InitializeController(this, ID);
             DoNameChange(data.CardName);
         }
 
         private int GenerateID()
         {
             var id = UnityEngine.Random.Range(100000, 999999);
+            string key = data.ID.ToString() + id.ToString();
+            id = int.Parse(key);
             return id;
         }
 

@@ -7,11 +7,11 @@ using UnityEngine.AddressableAssets;
 
 namespace TheGame
 {
-    public class CardBuilder : MonoBehaviour
+    public class CardBuilder
     {
         public GameObject GetCard(int id)
         {
-            GameObject newCard = Instantiate(Application.Instance.Resources.CardPrefab);
+            GameObject newCard = MonoCreator.Create<GameObject>(Application.Instance.Resources.CardPrefab);
             var controller = newCard.GetComponent<CardController>();
             CardData data = Application.Instance.CardDataHolder.GetData(id);
             CardModel model = new CardModel(controller, data);
